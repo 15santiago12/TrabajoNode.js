@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+        title Document
+    body
+    div(class="p-3 mb-2 bg-light text-dark")
+        nav
+            ul(class="nav nav-pills  nav-justified" )
+                li(class="nav-item"): a(class="nav-link" href="/" class="text-danger") inicio
+                li(class="nav-item"): a(class="nav-link" href= "/uno" class="text-danger") ejercicio uno
+                li(class="nav-item"): a(class="nav-link" href= "/dos" class="text-danger") ejercicio dos
+                li(class="nav-item"): a(class="nav-link" href= "/tres" class="text-danger") ejercicio tres
+                li(class="nav-item"): a(class="nav-link" href= "/cuatro" class="text-danger") ejercicio cuatro
+                li(class="nav-item"): a(class="nav-link" href= "/cinco" class="text-danger") ejercicio cinco
+                li(class="nav-item"): a(class="nav-link" href= "/seis" class="text-danger") ejercicio seis
+                li(class="nav-item"): a(class="nav-link" href= "/siete" class="text-danger") ejercicio siete
+                li(class="nav-item"): a(class="nav-link" href= "/ocho" class="text-danger") ejercicio ocho
+    br
+    h2(align="center" style="color:red") Día del mes
+    br
+    p(align="center") Realizar un programa que reciba un valor numérico y dependiendo del número 
+    p(align="center") arroje el día del MES que corresponda para septiembre 2018. EL sistema se debe desarrollar con sentencia Switch.
+    br
+    form(action="ejercicio2" method="POST")
+        div(class= "container")
+                div(class="row")
+                    div(class="col")
+                        input( style="margin-left: 12cm" class="btn btn-dark" type="text", name="mes")
+                        br
+                        br
+                        input(style="margin-left: 13.5cm" class="btn btn-danger" type="submit", value="Generar")
+    h4(align="center") La fecha corresponde al día: 
+    h2(align="center" style="color:red") #{dia}

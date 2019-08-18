@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+        title Document
+    
+    body
+
+    div(class="p-3 mb-2 bg-light text-dark")
+        nav
+            ul(class="nav nav-pills  nav-justified" )
+                li(class="nav-item"): a(class="nav-link" href="/" class="text-primary") inicio
+                li(class="nav-item"): a(class="nav-link" href= "/uno" class="text-primary") ejercicio uno
+                li(class="nav-item"): a(class="nav-link" href= "/dos" class="text-primary") ejercicio dos
+                li(class="nav-item"): a(class="nav-link" href= "/tres" class="text-primary") ejercicio tres
+                li(class="nav-item"): a(class="nav-link" href= "/cuatro" class="text-primary") ejercicio cuatro
+                li(class="nav-item"): a(class="nav-link" href= "/cinco" class="text-primary") ejercicio cinco
+                li(class="nav-item"): a(class="nav-link" href= "/seis" class="text-primary") ejercicio seis
+                li(class="nav-item"): a(class="nav-link" href= "/siete" class="text-primary") ejercicio siete
+                li(class="nav-item"): a(class="nav-link" href= "/ocho" class="text-primary") ejercicio ocho
+    br
+    h1(align="center" style="color:#0083FF") Tres números aleatorios
+    br
+    p(align="center") 5.3.	Busque 3 números aleatoriamente y defina si el número encontrado es mayor a 50, menor de 20 o es un numero negativo.
+    form(action="ejercicio3" method="POST")
+            - 
+            div(class= "container")
+                div(class="row")
+                    div(class="col")
+                        p(align="center") numero uno : #{numero1}
+                        p(align="center") numero dos : #{numero2}
+                        p(align="center") numero tres : #{numero3}
+                    div(class="col")
+                        h6(align="center" style="color:blue") el numero 1 es: #{resNum1}
+                        h6(align="center" style="color:blue") el numero 2 es: #{resNum2}
+                        h6(align="center" style="color:blue") el numero 3 es: #{resNum3}
+
+            - 
+            div(class= "container")
+                div(class="row")
+                    div(class="col")
+                        br 
+                        br
+                        input(style="margin-left: 13.5cm" class="btn btn-primary" type="submit", value="Generar")
+            

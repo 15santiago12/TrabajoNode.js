@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+        title Document
+    
+
+    body
+    div(class="p-3 mb-2 bg-light text-dark")
+        nav
+            ul(class="nav nav-pills  nav-justified" )
+                li(class="nav-item"): a(class="nav-link" href="/" class="text-info") inicio
+                li(class="nav-item"): a(class="nav-link" href= "/uno" class="text-info") ejercicio uno
+                li(class="nav-item"): a(class="nav-link" href= "/dos" class="text-info") ejercicio dos
+                li(class="nav-item"): a(class="nav-link" href= "/tres" class="text-info") ejercicio tres
+                li(class="nav-item"): a(class="nav-link" href= "/cuatro" class="text-info") ejercicio cuatro
+                li(class="nav-item"): a(class="nav-link" href= "/cinco" class="text-info") ejercicio cinco
+                li(class="nav-item"): a(class="nav-link" href= "/seis" class="text-info") ejercicio seis
+                li(class="nav-item"): a(class="nav-link" href= "/siete" class="text-info") ejercicio siete
+                li(class="nav-item"): a(class="nav-link" href= "/ocho" class="text-info") ejercicio ocho
+    br
+    h1(align="center" style="color:#8AB4DD") Mayor, Menor, Pares e Impares
+    br
+    p(align="center") Realice un programa que imprima el número mayor, el número menor, cuales son pares, cuales son impares entre 10 números calculados aleatoriamente. 
+    p(align="center") El sistema debe declarar cada variable y su valor debe ser calculado aleatoriamente. Se debe realizar con la sentencia IF.
+    br
+    form(action="ejercicio5" method="POST")
+            - 
+            div(class= "container")
+                div(class="row")
+                    div(class="col")
+                        p numero uno : #{numero1}
+                        p numero dos : #{numero2}
+                        p numero tres : #{numero3}
+                        p numero cuatro : #{numero4}
+                        p numero cinco : #{numero5}
+                    div(class="col")
+                        p numero seis : #{numero6}
+                        p numero siete : #{numero7}
+                        p numero ocho : #{numero8}
+                        p numero nueve : #{numero9}
+                        p numero diez : #{numero10}
+                    div(class="col")
+                        h6 el numero mayor es: #{Mayor}
+                        h6 el numero menor es: #{Menor}
+                        h6 pares: #{pares}
+                        h6 impares: #{impares}
+                        input(class="btn btn-info" type="submit", value="Calcular")
+
+            - 
+            
+            
+    

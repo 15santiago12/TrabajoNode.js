@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+        title Document
+    
+
+    body
+    div(class="p-3 mb-2 bg-light text-dark")
+        nav
+            ul(class="nav nav-pills  nav-justified" )
+                li(class="nav-item"): a(class="nav-link" href="/" class="text-warning") inicio
+                li(class="nav-item"): a(class="nav-link" href= "/uno" class="text-warning") ejercicio uno
+                li(class="nav-item"): a(class="nav-link" href= "/dos" class="text-warning") ejercicio dos
+                li(class="nav-item"): a(class="nav-link" href= "/tres" class="text-warning") ejercicio tres
+                li(class="nav-item"): a(class="nav-link" href= "/cuatro" class="text-warning") ejercicio cuatro
+                li(class="nav-item"): a(class="nav-link" href= "/cinco" class="text-warning") ejercicio cinco
+                li(class="nav-item"): a(class="nav-link" href= "/seis" class="text-warning") ejercicio seis
+                li(class="nav-item"): a(class="nav-link" href= "/siete" class="text-warning") ejercicio siete
+                li(class="nav-item"): a(class="nav-link" href= "/ocho" class="text-warning") ejercicio ocho
+    br
+    h1(align="center" style="color:#FFBD00") Par o Impar
+    br
+    p(align="center") Identifique si un número es par o impar. El sistema debe recibir una variable entera que se calcule aleatoriamente.
+    br
+    form(action="ejercicio4" method="POST")
+        div(class= "container")
+                div(class="row")
+                    div(class="col")
+                        p(align="center") el numero es : #{numero}
+                    div(class="col")
+                        h6(align="center") el numero es: #{resNumero}
+        input(style="margin-left: 16.5cm" class="btn btn-warning" type="submit", value="Generar")
+    

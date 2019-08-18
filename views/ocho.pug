@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+        title Document
+    
+
+    body
+    div(class="p-3 mb-2 bg-light text-dark")
+        nav
+            ul(class="nav nav-pills  nav-justified" )
+                li(class="nav-item"): a(class="nav-link" href="/" class="text-dark") inicio
+                li(class="nav-item"): a(class="nav-link" href= "/uno" class="text-dark") ejercicio uno
+                li(class="nav-item"): a(class="nav-link" href= "/dos" class="text-dark") ejercicio dos
+                li(class="nav-item"): a(class="nav-link" href= "/tres" class="text-dark") ejercicio tres
+                li(class="nav-item"): a(class="nav-link" href= "/cuatro" class="text-dark") ejercicio cuatro
+                li(class="nav-item"): a(class="nav-link" href= "/cinco" class="text-dark") ejercicio cinco
+                li(class="nav-item"): a(class="nav-link" href= "/seis" class="text-dark") ejercicio seis
+                li(class="nav-item"): a(class="nav-link" href= "/siete" class="text-dark") ejercicio siete
+                li(class="nav-item"): a(class="nav-link" href= "/ocho" class="text-dark") ejercicio ocho
+    br
+    h1(align="center") Vector
+    br
+    p(align="center") Cargar un vector donde su tamaño sea un número aleatorio dado entre 1 y 20. Y en cada posición del arreglo cargarlo con otro número aleatorio
+    p(align="center") dado también en el mismo rango. Una vez cargado debe recorrerlo y mostrar:
+    p(align="center") Todos los números cargado, Suma números pares, Suma de números impares, Total de números pares, total de números impares.
+
+    br
+    form(action="ejercicio8" method="POST")
+        div(class= "container")
+                div(class="row")
+                    div(class="col")
+                        p(align="center") tamaño del vector : #{tArray}
+                        h6(align="center") Numeros: #{numeros}
+                        br
+                        h6(align="center") Suma par: #{Pares} 
+                        br
+                        h6(align="center") Suma Impar: #{Impares}
+                        br
+                        h6(align="center") No Pares: #{cantPares}
+                        
+                        h6(align="center") No Impares: #{cantImpares}
+                        
+                        input(style="margin-left: 13.5cm" class="btn btn-dark" type="submit", value="Generar")

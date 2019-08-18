@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+        title Document
+    
+
+    body
+    div(class="p-3 mb-2 bg-light text-dark")
+        nav
+            ul(class="nav nav-pills  nav-justified" )
+                li(class="nav-item"): a(class="nav-link" href="/" class="text-secondary") inicio
+                li(class="nav-item"): a(class="nav-link" href= "/uno" class="text-secondary") ejercicio uno
+                li(class="nav-item"): a(class="nav-link" href= "/dos" class="text-secondary") ejercicio dos
+                li(class="nav-item"): a(class="nav-link" href= "/tres" class="text-secondary") ejercicio tres
+                li(class="nav-item"): a(class="nav-link" href= "/cuatro" class="text-secondary") ejercicio cuatro
+                li(class="nav-item"): a(class="nav-link" href= "/cinco" class="text-secondary") ejercicio cinco
+                li(class="nav-item"): a(class="nav-link" href= "/seis" class="text-secondary") ejercicio seis
+                li(class="nav-item"): a(class="nav-link" href= "/siete" class="text-secondary") ejercicio siete
+                li(class="nav-item"): a(class="nav-link" href= "/ocho" class="text-secondary") ejercicio ocho
+    br
+    h1(align="center" style="color:#7A7C7D") Promedio
+    br
+    p(align="center") Realice un programa que permita calcular y dar como salida el promedio general de una curso, 
+    p(align="center") tomando en cuenta que está compuesto por 25 estudiantes y que se tiene la nota definitiva de cada uno de ellos.
+    br
+    form(action="ejercicio6" method="POST")
+            - 
+            div(class= "container")
+                div(class="row")
+                    div(class="col")
+                        input(type="number" name="not1")
+                        input(type="number" name="not2")
+                        input(type="number" name="not3")
+                        input(type="number" name="not4")
+                        input(type="number" name="not5")
+                    div(class="col")
+                        input(type="number" name="not6")
+                        input(type="number" name="not7")
+                        input(type="number" name="not8")
+                        input(type="number" name="not9")
+                        input(type="number" name="not10")
+                    div(class="col")
+                        input(type="number" name="not11")
+                        input(type="number" name="not12")
+                        input(type="number" name="not13")
+                        input(type="number" name="not14")
+                        input(type="number" name="not15")
+                    div(class="col")
+                        input(type="number" name="not16")
+                        input(type="number" name="not17")
+                        input(type="number" name="not18")
+                        input(type="number" name="not19")
+                        input(type="number" name="not20")
+                    div(class="col")
+                        input(type="number" name="not21")
+                        input(type="number" name="not22")
+                        input(type="number" name="not23")
+                        input(type="number" name="not24")
+                        input(type="number" name="not25")
+            - 
+            br
+            div(class= "container")
+                div(class="row")
+                    div(class="col")
+                        input(style="margin-left: 13.5cm" class="btn btn-secondary" type="submit", value="Generar")
+
+                        h4 El promedio es de: #{promedio}
+    

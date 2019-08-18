@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="bower_components/boostrap/dist/css/bootstrap.min.css")
+        title Document
+    body
+    div(class="p-3 mb-2 bg-light text-dark")
+        nav
+            ul(class="nav nav-pills  nav-justified" )
+                li(class="nav-item"): a(class="nav-link" href="/" class="text-success") inicio
+                li(class="nav-item"): a(class="nav-link" href= "/uno" class="text-success") ejercicio uno
+                li(class="nav-item"): a(class="nav-link" href= "/dos" class="text-success") ejercicio dos
+                li(class="nav-item"): a(class="nav-link" href= "/tres" class="text-success") ejercicio tres
+                li(class="nav-item"): a(class="nav-link" href= "/cuatro" class="text-success") ejercicio cuatro
+                li(class="nav-item"): a(class="nav-link" href= "/cinco" class="text-success") ejercicio cinco
+                li(class="nav-item"): a(class="nav-link" href= "/seis" class="text-success") ejercicio seis
+                li(class="nav-item"): a(class="nav-link" href= "/siete" class="text-success") ejercicio siete
+                li(class="nav-item"): a(class="nav-link" href= "/ocho" class="text-success") ejercicio ocho
+            
+      
+    br
+    h1(align="center" style="color:green") Mayor y Menor
+    br
+    p(align="center") Realice un programa que imprima el número mayor, el número menor entre 10 números. El sistema debe declarar cada variable y su valor debe ser calculado aleatoriamente.
+    
+    form(action="ejercicio" method="POST")
+            -
+            div(class= "container")
+                div(class="row")
+                    div(class="col")
+                        p(align="center") numero uno : #{numero1}
+
+                        p(align="center") numero dos : #{numero2}
+
+                        p(align="center") numero tres : #{numero3}
+
+                        p(align="center") numero cuatro : #{numero4}
+            
+                        p(align="center") numero cinco : #{numero5}
+                    div(class="col")
+                        p(align="center") numero seis : #{numero6}
+
+                        p(align="center") numero siete : #{numero7}
+    
+                        p(align="center") numero ocho : #{numero8}
+
+                        p(align="center") numero nueve : #{numero9}
+
+                        p(align="center") numero diez : #{numero10}
+            -
+            div(class= "container")
+                div(class="row")
+                    div(class="col")
+                        input(style="margin-left: 13.5cm" class="btn btn-success"   type="submit", value="Calcular")
+    br       
+    h4(align="center") el numero mayor es: #{Mayor}
+    h4(align="center") el numero menor es: #{Menor}  
+            
